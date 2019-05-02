@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Categories List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Categories List</h2>
+      <br />
+      <form id="addForm">
+        <div class="row">
+          <div class="col-md-4">
+            <input
+              type="text"
+              id="category"
+              class="form-control"
+              placeholder="Category Name"
+            />
+          </div><br />
+          <div class="col-md-4">
+            <input
+              type="button"
+              class="add-row btn btn-primary"
+              value="Add Row"
+            />
+            <input
+              type="button"
+              class="btn btn-danger"
+              class="add-row"
+              value="Cancel"
+              onClick="cancel()"
+            />
+          </div>
+        </div>
+      </form>
+      <a
+        href="#"
+        onClick="add()"
+        class="btn btn-info btn-lg"
+        style="float:right"
+      >
+        <span class="glyphicon glyphicon-plus-sign"></span>
+      </a>
+      <table class="table table-striped" id="customFields">
+        <thead>
+          <tr>
+            <th>CATEGORY</th>
+            <th>SEQ</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table><hr>
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>

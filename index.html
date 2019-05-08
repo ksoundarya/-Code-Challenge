@@ -4,18 +4,18 @@
     <title>Categories List</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
   </head>
   <body>
-    <div class="container">
-      <h2>Categories List</h2>
-      <br />
+    <div>
       <form id="addForm">
         <div class="row">
           <div class="col-md-4">
@@ -41,26 +41,26 @@
             />
           </div>
         </div>
-      </form>
+      </form><br />
       <a
         href="#"
+        class="-ADD-CATEGORY"
         onClick="add()"
-        class="btn btn-info btn-lg"
         style="float:right"
-      >
-        <span class="glyphicon glyphicon-plus-sign"></span>
+      >  
+      <span class="glyphicon glyphicon-plus">ADD-CATEGORY</span>
       </a>
-      <table class="table table-striped" id="customFields">
+      <table class="table Rectangle-13277" id="customFields">
+        <span>Section</span>
         <thead>
           <tr>
-            <th>CATEGORY</th>
-            <th>SEQ</th>
-            <th>ACTION</th>
+            <th class="CATEGORY">CATEGORY</th>
+            <th class="SEQ">SEQ</th>
           </tr>
         </thead>
         <tbody>
         </tbody>
-      </table><hr>
+      </table>
     </div>
     <script src="custom.js"></script>
   </body>

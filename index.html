@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Categories List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  <body>
+    <div class="container  pt-4">
+      <form id="addForm">
+        <div class="row">
+          <div class="col-md-4">
+            <input
+              type="text"
+              id="category"
+              class="form-control"
+              placeholder="Category Name"
+            />
+          </div><br />
+          <div class="col-md-4">
+            <input
+              type="button"
+              class="add-row btn btn-primary"
+              value="Add Row"
+            />
+            <input
+              type="button"
+              class="btn btn-danger"
+              class="add-row"
+              value="Cancel"
+              onClick="cancel()"
+            />
+          </div>
+        </div>
+      </form><br />
+      <div class="border border-light">
+          <div class="d-flex p-1 flex-row justify-content-between align-items-center bg-white border-top-1">
+              <h2>Section</h2>
+              <a
+              href="#"
+              class="-ADD-CATEGORY"
+              onClick="add()"
+            >  <i class="fa fa-plus"></i>ADD-CATEGORY
+          </a>
+          </div>
+          <div class="row no-gutters">
+              <table class="table table-stripped table-responsive Rectangle-13277" id="customFields">
+            
+                  <thead>
+                    <tr>
+                      <th class="CATEGORY" width='25%'>CATEGORY</th>
+                      <th class="SEQ"  width='60%'>SEQ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+    
+          </div>
+      </div>
+      
+      
+      
+     
+      
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>
